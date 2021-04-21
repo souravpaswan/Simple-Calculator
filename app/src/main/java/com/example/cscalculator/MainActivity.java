@@ -64,16 +64,16 @@ public class MainActivity extends AppCompatActivity {
 
                 if(v1.isEmpty() || v2.isEmpty())
                     Toast.makeText(getApplicationContext(), "Empty fields aren't allowed!", Toast.LENGTH_SHORT).show();
-                else {
+                else 
+                {
                     double a = Double.parseDouble(v1);
                     double b = Double.parseDouble(v2);
                     double sub = a - b;
 
                     String value = Double.toString(sub);
 
-                    if (value.charAt(value.indexOf('.') + 1) == '0')
+                    if (sub%1==0)
                         value = value.substring(0, value.indexOf('.'));
-
 
                     Toast.makeText(getApplicationContext(), value, Toast.LENGTH_SHORT).show();
                 }
