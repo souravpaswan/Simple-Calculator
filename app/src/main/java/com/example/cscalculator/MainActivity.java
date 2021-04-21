@@ -8,10 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import android.os.Bundle;
-
-import org.w3c.dom.Text;
-
 public class MainActivity extends AppCompatActivity {
 
     EditText editText1, editText2;
