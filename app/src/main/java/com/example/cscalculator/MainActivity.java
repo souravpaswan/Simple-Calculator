@@ -120,10 +120,14 @@ public class MainActivity extends AppCompatActivity {
                 {
                     double a = Double.parseDouble(v1);
                     double b = Double.parseDouble(v2);
+                    
                     double div = a / b;
+                    
                     String value= Double.toString(div);
-                    if(value.charAt(value.indexOf('.')+1)=='0')
+                    
+                    if(div%1==0)
                         value=value.substring(0,value.indexOf('.'));
+                    
                     Toast.makeText(getApplicationContext(), value, Toast.LENGTH_SHORT).show();
                 }
             }
